@@ -11,5 +11,8 @@ module.exports = mongoose.model('Lesion', new Schema({
         type: String,
         required: true,
     },
+    locatie: {
+        type: [String]
+    },
     manevre: [Manevra.schema]
 }));
